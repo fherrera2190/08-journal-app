@@ -13,6 +13,8 @@ const {
   VITE_FIREBASE_APPID,
 } = getEnvironments();
 
+
+
 const firebaseConfig = {
   apiKey: VITE_FIREBASE_APIKEY,
   authDomain: VITE_FIREBASE_AUTHDOMAIN,
@@ -21,7 +23,7 @@ const firebaseConfig = {
   messagingSenderId: VITE_FIREBASE_MESSAGINGSENDERID,
   appId: VITE_FIREBASE_APPID,
 };
-console.log(firebaseConfig)
+//console.log(firebaseConfig)
 // Initialize Firebase
 export const FirebaseApp = initializeApp(firebaseConfig);
 export const FirebaseAuth = getAuth(FirebaseApp);

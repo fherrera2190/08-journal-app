@@ -6,7 +6,7 @@ export const loadNotes = async (uid = "") => {
   const collectionRef = collection(FirebaseDB, `${uid}/journal/notes`);
   const docs = await getDocs(collectionRef);
   const notes=[]
-  console.log(docs);
+  //console.log(docs);
   docs.forEach((doc) => {
     notes.push({ id: doc.id, ...doc.data() });
   })
